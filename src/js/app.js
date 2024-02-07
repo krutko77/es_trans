@@ -36,7 +36,7 @@ flsFunctions.isWebp();
 /* Додавання loaded для HTML після повного завантаження сторінки */
 // flsFunctions.addLoadedClass();
 /* Модуль для роботи з меню (Бургер) */
-// flsFunctions.menuInit();
+flsFunctions.menuInit();
 /* Форматування чисел */
 // import './libs/wNumb.min.js';
 
@@ -183,7 +183,7 @@ flsForms.formFieldsInit({
 // Спостерігач за об'єктами з атрибутом data-watch
 // Документація: https://template.fls.guru/template-docs/modul-nabljudatel-za-poyavleniem-elementa-pri-skrolle.html
 // Сніппет(HTML):
-// import './libs/watcher.js'
+import './libs/watcher.js'
 
 // Модуль поекранної прокрутки
 // Документація: https://template.fls.guru/template-docs/modul-poekrannoj-prokrutki-stranicy-fullpage.html
@@ -193,18 +193,18 @@ flsForms.formFieldsInit({
 // Модуль паралаксу
 // Документація: https://template.fls.guru/template-docs/paralaks-pri-skroli.html
 // Сніппет(HTML):
-// import './libs/parallax.js'
+import './libs/parallax.js'
 
 // Функції роботи скролом
-import * as flsScroll from "./files/scroll/scroll.js";
+// import * as flsScroll from "./files/scroll/scroll.js";
 
 // Плавна навігація по сторінці
 // Документація: https://template.fls.guru/template-docs/modul-plavnoj-navigacii-po-stranice.html
-// flsScroll.pageNavigation();
+flsScroll.pageNavigation();
 
 // Функціонал додавання класів до хедеру під час прокручування
 // Документація: https://template.fls.guru/template-docs/modul-dobavleniya-klassov-k-shapke-pri-prokrutke-stranicy.html
-// flsScroll.headerScroll();
+flsScroll.headerScroll();
 
 // Модуль анімація цифрового лічильника
 // Документація: https://template.fls.guru/template-docs/modul-animacii-cifrovogo-lichilnika.html
