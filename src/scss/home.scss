@@ -1,10 +1,124 @@
 // home
 
 .home {
-	min-height: 100vh;
-	background-image: url('./../img/bg-home-2.jpg');
-	background-size: cover;
-	background-position: bottom right;
-	width: 100%;
-	aspect-ratio: 16/9;
+   height: 100vh;
+   padding: 120px 0 70px;
+   background-image: url('./../img/bg-home-5-50.jpg');
+   background-size: cover;
+   background-position: bottom right;
+   width: 100%;
+   aspect-ratio: 16/9;
+   color: $mainBgColor;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-end;
+
+   @media (max-width:$mobileSmall) {
+		padding: 150px 0 70px;
+      background-image: url('./../img/bg-home-480-50.jpg');
+   }
+
+   &__container {
+      width: 100%;
+   }
+
+   &__content {
+      text-transform: uppercase;
+   }
+
+   &__title {
+      font-size: toRem(80);
+      text-align: left;
+      margin-bottom: 0;
+      opacity: 0;
+      transform: translateY(50px);
+      text-shadow: 0 0 5px $mainColor;
+
+		@media (max-width:$pc) {
+			font-size: calc(toRem(60) + 20*((100vw - 320px) / (1200 - 320)));
+		}
+   }
+
+   &__title._watcher-view {
+      opacity: 1;
+      transform: translateY(0);
+      transition: transform 1.3s ease 0s, opacity 1.3s ease 0s;
+   }
+
+   &__label {
+      /* color: $accentColor; */
+      font-size: toRem(40);
+      font-weight: 900;
+      line-height: math.div(60, 50);
+      margin-bottom: toEm(40, 40);
+      opacity: 0;
+      transform: translateY(50px);
+      text-shadow: 0 0 5px $mainColor;
+
+      @media (max-width:$pc) {
+         font-size: calc(toRem(25) + 15*((100vw - 320px) / (1200 - 320)));
+      }
+
+		@media (max-width:$tablet) {
+         margin-bottom: 60px;
+      }
+
+		@media (max-width:$mobile) {
+         margin-bottom: 50px;
+      }
+   }
+
+   &__label._watcher-view {
+      opacity: 1;
+      transform: translateY(0);
+      transition: transform 1.2s ease 0.4s, opacity 1.2s ease 0.4s;
+   }
+
+   &__offer-wrap {
+      max-width: 750px;
+   }
+
+   &__action {
+      text-align: center;
+		font-weight: 500;
+   }
+}
+
+.list {
+   &__item {
+      display: flex;
+      margin-bottom: toEm(35, 25);
+
+      p {
+         text-transform: uppercase;
+         font-size: 25px;
+         font-weight: 500;
+         line-height: 1.2;
+         text-shadow: 0 0 15px $mainColor;
+
+			@media (max-width:$pc) {
+				font-size: calc(toRem(18) + 7*((100vw - 320px) / (1200 - 320)));
+			}
+      }
+   }
+
+   svg {
+      position: relative;
+      top: 0;
+      flex-shrink: 0;
+      height: 30px;
+      width: 30px;
+      margin-right: 4px;
+      fill: $accentColor;
+
+      @media (max-width: $tablet) {
+         top: 1px;
+      }
+   }
+}
+
+.preload {
+   transition: none !important;
 }

@@ -1,20 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-	@@include('html/_head.htm',{
-	"title":"ЕС Транс | Надёжная логистика"
-	})
-	<body>
-		<div class="wrapper">
-			@@include('html/_header.htm',{})
-			<main class="page">
-				<section class="home" data-watch="navigator" data-watch-threshold="0.55">
-					<div class="home__container">
+@@include('html/_head.htm',{
+"title":"ЕС Транс | Грузоперевозки"
+})
 
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page text">
+			<section class="home" data-watch="navigator" data-watch-threshold="0.55">
+				<div class="home__container">
+					<div class="home__content">
+						<div class="home__name-block">
+							<h1 class="home__title" data-watch data-watch-once>ЕС Транс</h1>
+							<p class="home__label" data-watch data-watch-once>Надёжность вашего бизнеса</p>
 						</div>
-				</section>
-			</main>
-			@@include('html/_footer.htm',{})
-		</div>
-		@@include('html/_js.htm',{})
-	</body>
+						<div class="home__offer-wrap margin-bottom-60">
+							<ul class="home__list list">
+
+								<li class="list__item margin-bottom-10">
+									<svg>
+										<use xlink:href="@img/icons/icons.svg#check"></use>
+									</svg>
+									<p class="list__text">автомобильные перевозки комплектных, сборных и опасных грузов</p>
+								</li>
+
+								<li class="list__item margin-bottom-10">
+									<svg>
+										<use xlink:href="@img/icons/icons.svg#check"></use>
+									</svg>
+									<p class="list__text">доставка грузов из Европы и Китая
+									<p>
+								</li>
+
+								<li class="list__item margin-bottom-10">
+									<svg>
+										<use xlink:href="@img/icons/icons.svg#check"></use>
+									</svg>
+									<p class="list__text">доставка грузов по России и в страны ЕАЭС</p>
+								</li>
+
+								<li class="list__item margin-bottom-10">
+									<svg>
+										<use xlink:href="@img/icons/icons.svg#check"></use>
+									</svg>
+									<p class="list__text">таможенное оформление грузов</p>
+								</li>
+
+								<li class="list__item margin-bottom-10">
+									<svg>
+										<use xlink:href="@img/icons/icons.svg#check"></use>
+									</svg>
+									<p class="list__text">собственные торговые компании в Германии и Китае</p>
+								</li>
+
+							</ul>
+						</div>
+						<div class="home__action action">
+							<p class="action__text margin-bottom-30">Узнайте стоимость вашего заказа</p>
+							<button class="button button-offer preload">Рассчитать</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="prices" data-watch="navigator" data-watch-threshold="0.3">
+				<div class="prices__container">
+					<div class="prices__content">
+						<h2 class="prices__title title">Цены</h2>
+					</div>
+				</div>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
 </html>
+

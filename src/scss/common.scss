@@ -1,6 +1,6 @@
 // Секции
 section {
-	padding: 170px 0 90px;
+	padding: 90px 0 90px;
 
 	@media (max-width:$pc){
 		 padding-top: calc(100px + 70*((100vw - 320px) / (1200 - 320)));
@@ -10,7 +10,6 @@ section {
 
 // Заголовки
 .title, .subtitle {
-	font-family: "Merriweather";
 	text-align: center;	
 	text-transform: uppercase;
 }
@@ -19,12 +18,11 @@ section {
 	text-align: left;	
 }
 
-
-h2 {
-	font-size: toRem(40);
-	font-weight: 900;
-	line-height: math.div(52, 40);
-	margin-bottom: toEm(50, 40);
+h1, h2 {
+	font-size: toRem(50);
+	font-weight: 700;
+	line-height: math.div(52, 50);
+	margin-bottom: toEm(50, 50);
 
 	@media (max-width:$pc){
 		font-size:  calc(toRem(27) + 13*((100vw - 320px) / (1200 - 320)));
@@ -44,8 +42,8 @@ h3 {
 
 // Общий текст
 .text {
-	font-family: "Roboto";
-	font-weight: 400;
+	/* font-family: "Roboto";
+	font-weight: 400; */
 	font-size: toRem(20);
 	line-height: 1.5;
 
@@ -148,8 +146,17 @@ button:not(.swiper-button-prev, .swiper-button-next, .menu__icon), .button {
 	padding: toEm(12, 16) toEm(20, 16) toEm(10, 16);
 	border-radius: 3px;
 	font-weight: 500;
-	letter-spacing: 2px;
-	color: $mainColor;
+	letter-spacing: 2px;	
+}
+
+.button-offer {
+	color: $mainBgColor;
+	background-color: $accentColor;
+	transition: background-color 0.3s ease; 
+}
+
+.button-offer:hover {
+	background-color: $accentDarkColor;
 }
 
 .button-accent, .button-back {
@@ -164,10 +171,10 @@ button:not(.swiper-button-prev, .swiper-button-next, .menu__icon), .button {
 					opacity 0.8s ease;
 }
 
-.button-back {
+/* .button-back {
 	opacity: 1;
 	transform: scale(1);
-}
+} */
 
 @media (any-hover: hover) {
 	.button-accent:hover, .button-back:hover {
@@ -183,7 +190,7 @@ button:not(.swiper-button-prev, .swiper-button-next, .menu__icon), .button {
 }
 
 .button-accent._watcher-view:active,
-.button-back:active {
+.button-back:active, .button-offer:active {
 	transform: translate(1px, 2px);
 	transition: transform 0.3s ease;
 }
