@@ -1,5 +1,4 @@
 // home
-
 .home {
    height: 100vh;
    padding: 120px 0 70px;
@@ -16,7 +15,7 @@
    align-items: flex-end;
 
    @media (max-width:$mobileSmall) {
-		padding: 150px 0 70px;
+      padding: 120px 0 70px;
       background-image: url('./../img/bg-home-480-50.jpg');
    }
 
@@ -36,9 +35,9 @@
       transform: translateY(50px);
       text-shadow: 0 0 5px $mainColor;
 
-		@media (max-width:$pc) {
-			font-size: calc(toRem(60) + 20*((100vw - 320px) / (1200 - 320)));
-		}
+      @media (max-width:$pc) {
+         font-size: calc(toRem(50) + 30*((100vw - 320px) / (1200 - 320)));
+      }
    }
 
    &__title._watcher-view {
@@ -48,7 +47,6 @@
    }
 
    &__label {
-      /* color: $accentColor; */
       font-size: toRem(40);
       font-weight: 900;
       line-height: math.div(60, 50);
@@ -61,12 +59,16 @@
          font-size: calc(toRem(25) + 15*((100vw - 320px) / (1200 - 320)));
       }
 
-		@media (max-width:$tablet) {
+      @media (max-width:$tablet) {
          margin-bottom: 60px;
       }
 
-		@media (max-width:$mobile) {
+      @media (max-width:$mobile) {
          margin-bottom: 50px;
+      }
+
+		@media (max-width:$mobile) {
+         margin-bottom: 30px;
       }
    }
 
@@ -80,9 +82,32 @@
       max-width: 750px;
    }
 
+   &__icons {
+      position: relative;
+      top: -1px;
+      flex-shrink: 0;
+      height: 30px;
+      width: 30px;
+      margin-right: 4px;
+      fill: $accentColor;
+
+      @media (max-width: $tablet) {
+         height: 27px;
+         width: 27px;
+         top: -2px;
+      }
+
+      @media (max-width: $mobile) {
+         height: 25px;
+         width: 25px;
+         top: -5px;
+         margin-right: 3px;
+      }
+   }
+
    &__action {
       text-align: center;
-		font-weight: 500;
+      font-weight: 500;
    }
 }
 
@@ -98,23 +123,9 @@
          line-height: 1.2;
          text-shadow: 0 0 15px $mainColor;
 
-			@media (max-width:$pc) {
-				font-size: calc(toRem(18) + 7*((100vw - 320px) / (1200 - 320)));
-			}
-      }
-   }
-
-   svg {
-      position: relative;
-      top: 0;
-      flex-shrink: 0;
-      height: 30px;
-      width: 30px;
-      margin-right: 4px;
-      fill: $accentColor;
-
-      @media (max-width: $tablet) {
-         top: 1px;
+         @media (max-width:$pc) {
+            font-size: calc(toRem(18) + 7*((100vw - 320px) / (1200 - 320)));
+         }
       }
    }
 }
