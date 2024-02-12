@@ -45,7 +45,7 @@
       margin-right: 4px;
       fill: $accentColor;
 
-		@media (max-width: $tablet) {
+      @media (max-width: $tablet) {
          height: 32px;
          width: 32px;
          top: -1px;
@@ -122,7 +122,7 @@
    }
 
    &__img-wrapper {
-      margin-bottom: toEm(15, 20);     
+      margin-bottom: toEm(15, 20);
    }
 
    &__icons {

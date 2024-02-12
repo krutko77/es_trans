@@ -3,7 +3,7 @@ section {
    padding: 90px 0 90px;
 
    @media (max-width:$pc) {
-      padding-top: calc(100px + 70*((100vw - 320px) / (1200 - 320)));
+      padding-top: calc(50px + 40*((100vw - 320px) / (1200 - 320)));
       padding-bottom: calc(50px + 40*((100vw - 320px) / (1200 - 320)));
    }
 }
@@ -167,20 +167,20 @@ button:not(.swiper-button-prev, .swiper-button-next, .menu__icon),
    letter-spacing: 2px;
 }
 
-.button-offer {
+.button-offer, .action-button {
    color: $mainBgColor;
    background-color: $accentColor;
    transition: background-color 0.3s ease;
 }
 
-.button-offer:hover {
-   background-color: $accentDarkColor;
-}
-
 .button-accent,
 .button-back {
    background-color: $accentColor;
-   border: 2px solid transparent;
+   border: 2px solid transparent;   
+}
+
+.button-accent,
+.button-back, .action-button {
    opacity: 0;
    transform: scale(0.5);
    transition: color 0.3s ease,
@@ -196,6 +196,10 @@ button:not(.swiper-button-prev, .swiper-button-next, .menu__icon),
 } */
 
 @media (any-hover: hover) {
+	.button-offer:hover, .action-button:hover {
+		background-color: $accentDarkColor;
+	}
+	
 
    .button-accent:hover,
    .button-back:hover {
@@ -203,14 +207,15 @@ button:not(.swiper-button-prev, .swiper-button-next, .menu__icon),
       background-color: transparent;
       border-color: $accentColor;
    }
+	
 }
 
-.button-accent._watcher-view {
+.button-accent._watcher-view, .action-button._watcher-view {
    opacity: 1;
    transform: scale(1);
 }
 
-.button-accent._watcher-view:active,
+.button-accent._watcher-view:active, .action-button._watcher-view:active,
 .button-back:active,
 .button-offer:active {
    transform: translate(1px, 2px);
