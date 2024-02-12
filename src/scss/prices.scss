@@ -22,15 +22,6 @@
       }
    }
 
-   &__subtitle {
-      margin-bottom: 30px;
-      line-height: 140%;
-
-      @media (max-width: $pc) {
-         margin-bottom: calc(10px + 20*((100vw - 320px) / (1260 - 320)));
-      }
-   }
-
    &__subtitle-box {
       align-self: flex-start;
       display: flex;
@@ -126,7 +117,7 @@
    }
 
    &__icons {
-      width: 65px;
+      width: 67px;
       height: 65px;
    }
 

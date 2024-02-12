@@ -46,6 +46,8 @@ h3 {
    font-weight: 900;
    line-height: math.div(40, 28);
    text-align: left;
+	margin-bottom: toEm(40, 28);
+
 
    @media (max-width:$pc) {
       font-size: calc(toRem(20) + 8*((100vw - 320px) / (1200 - 320)));

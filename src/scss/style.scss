@@ -150,7 +150,8 @@ body {
 // Підключення стилів окремих блоків
 @import "header";
 @import "prices";
-@import "action-block .scss";
+@import "action-block";
+@import "services";
 @import "footer";
 
 // Підключення стилів окремих сторінок
