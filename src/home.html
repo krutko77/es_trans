@@ -70,7 +70,7 @@
 					<div class="prices__wrapper">
 						<h2 class="prices__title title">Цены</h2>
 						<div class="prices__subtitle-box subtitle-box">
-							<svg class="prices__icons-check">
+							<svg class="prices__icons icons-check">
 								<use xlink:href="@img/icons/icons.svg#check"></use>
 							</svg>
 							<h3 class="prices__subtitle subtitle">Перевозка грузов</h3>
@@ -129,10 +129,14 @@
 
 							<div data-watch data-watch-once class="grid-prices__item grid-prices__item--3 card">
 								<div class="card__top">
-									<div class="card__img-wrapper">
+									<!-- <div class="card__img-wrapper">
 										<svg class="card__icons">
 											<use xlink:href="@img/icons/icons.svg#card"></use>
 										</svg>
+									</div> -->
+									<div class="card__img-wrapper">
+										<img class="card__icons" width="67" height="65" src="@img/icons/card-icon.png"
+											alt="иконка веб-разработки">
 									</div>
 									<h4 class="card__title sub-subtitle">Москва-Екатеринбург</h4>
 									<p class="card__text">Доставка, отслеживание груза 24/7</p>
@@ -150,10 +154,14 @@
 
 							<div data-watch data-watch-once class="grid-prices__item grid-prices__item--4 card">
 								<div class="card__top">
-									<div class="card__img-wrapper">
+									<!-- <div class="card__img-wrapper">
 										<svg class="card__icons">
 											<use xlink:href="@img/icons/icons.svg#card"></use>
 										</svg>
+									</div> -->
+									<div class="card__img-wrapper">
+										<img class="card__icons" width="67" height="65" src="@img/icons/card-icon.png"
+											alt="иконка веб-разработки">
 									</div>
 									<h4 class="card__title sub-subtitle">Брест (ТЛЦ)-Москва</h4>
 									<p class="card__text">Доставка, отслеживание груза 24/7</p>
@@ -178,25 +186,82 @@
 							перевозок грузов очень разные, как и грузы, которые мы перевозим.</p>
 						<p class="prices__text margin-bottom-20">Информацию о стоимости перевозки груза самолетом мы можем предоставить по вашему запросу. Чтобы получить наиболее точный расчет, нам необходима детальная информация о вашем грузе. Эти данные позволят нам оценить объем работы, требуемые ресурсы и прочие факторы, которые влияют на стоимость перевозки.</p>
 						<p class="prices__text margin-bottom-20">Свяжитесь с нами, предоставив все необходимые данные, и мы с удовольствием поможем вам с расчетом стоимости и предложим наилучший вариант перевозки вашего груза.</p>
-							<p class="prices__text margin-bottom-50">Для быстрой предварительной оценки стоимости и времени
+							<p class="prices__text margin-bottom-60">Для быстрой предварительной оценки стоимости и времени
 								доставки, пожалуйста заполните небольшую форму, нажав на красную кнопку в блоке ниже.</p>
 						<div class="prices__subtitle-box subtitle-box">
-							<svg class="prices__icons-check">
+							<svg class="prices__iconsk icons-check">
 								<use xlink:href="@img/icons/icons.svg#check"></use>
 							</svg>
 							<h3 class="prices__subtitle subtitle">таможенное оформление грузов</h3>
 						</div>
-						<p class="prices__text margin-bottom-20">Мы рады предоставить вам информацию о расчете стоимости таможенного оформления груза в Себежской, Смоленской и Московской областных таможнях. Чтобы обеспечить точный расчет, нам необходима полная информация о вашем грузе. Эти данные помогут нам оценить сложность и объем работы, связанные с таможенным оформлением, а также учесть прочие факторы, влияющие на стоимость.</p>
+						<p class="prices__text margin-bottom-20">Мы рады предоставить вам информацию о расчете стоимости таможенного оформления груза в Себежской, Смоленской и Московской областной таможнях. Чтобы обеспечить точный расчет, нам необходима полная информация о вашем грузе. Эти данные помогут нам оценить сложность и объем работы, связанные с таможенным оформлением, а также учесть прочие факторы, влияющие на стоимость.</p>
 						<p class="prices__text margin-bottom-20">После получения всех этих данных мы сможем предоставить вам точный расчет стоимости таможенного оформления груза. Наша команда опытных специалистов готова ответить на все ваши вопросы и помочь вам с организацией таможенных процедур.</p>
 						<p class="prices__text">Для быстрой предварительной оценки стоимости таможенного оформления, пожалуйста заполните небольшую форму, нажав на красную кнопку в блоке ниже.</p>
 					</div>
 				</div>
 			</section>
 			@@include('html/_action-block.htm',{})
-			<section class="services">
+			<section class="services" data-watch="navigator" data-watch-threshold="0.35">
 				<div class="services__container">
 					<div class="services__wrapper">
-						<h2 class="services__title title"></h2>
+						<h2 class="services__title title">Услуги</h2>
+						<div class="clearfix margin-bottom-50">
+							<div class="services__img-box img-box float-left">
+								<img class="services__img" src="@img/services-img-1-400.jpg" width="400" height="300" alt="фото автомобиля 'ЕС Транс'">
+							</div>
+							<p class="services__text margin-bottom-20">Наша компания выполняет перевозки грузов своими автомобилями и привлеченным транспортном. Мы стремимся быть надежным партнером для всех, кто нуждается в перевозке грузов, обеспечивая безопасную, эффективную и своевременную доставку.</p>
+							<p class="services__text margin-bottom-20">Мы устанавливаем доверительные отношения с нашими клиентами, предлагаем прозрачную коммуникацию на всех этапах перевозки, предоставляем информацию о статусе груза, предупреждаем о возможных задержках и оперативно реагируем на запросы и потребности клиентов. Все наши автомобили оборудованы GPS системой отслеживания, поэтому мы можем точно определить местоположение груза клиента в режиме 24/7.</p>
+							<p class="services__text margin-bottom-20">Наша компания полностью осознаёт важность точной доставки грузов в срок для наших клиентов. Поэтому мы предлагаем надёжные графики и оптимальные маршруты, чтобы обеспечить своевременную доставку груза в назначенное место. Наша команда опытных логистов тщательно планирует каждую перевозку, учитывая особенности груза, препятствия на дороге и логистические условия. Мы стремимся к высокому уровню сервиса и гарантируем, что ваш груз будет доставлен вовремя и в сохранности.</p>
+							<div class="services__img-box img-box float-right">
+								<img class="services__img" src="@img/services-img-2-400.jpg" width="400" height="273" alt="фото автомобиля 'ЕС Транс'">
+							</div>
+							<p class="services__text margin-bottom-20">Мы придерживаемся высоких стандартов надежности и безопасности во всех наших грузоперевозках. Наш автопарк состоит из современных грузовых автомобилей, оснащенных передовыми технологиями и системами безопасности. Автомобили регулярно проходят техническое обслуживание и проверки, чтобы гарантировать безопасность на дороге. Наши водители проходят необходимую подготовку и обучение в области безопасности на дороге.</p>
+							<p class="services__text">Так же мы предлагаем возможность страхования вашего груза на случай непредвиденных событий, таких как повреждение, утрата или кража. Мы работаем с надежными страховыми компаниями, чтобы обеспечить надежную защиту вашего груза во время перевозки.</p>
+						</div>
+						<div class="services__subtitle-box subtitle-box">
+							<svg class="services__icons icons-check">
+								<use xlink:href="@img/icons/icons.svg#check"></use>
+							</svg>
+							<h3 class="services__subtitle subtitle">Перевозка грузов автомобилями</h3>
+						</div>
+						<ul class="services__list list margin-bottom-50">
+							<li class="list__item">Комплектные и сборные грузы из Европы</li>
+							<li class="list__item">Комплектные и сборные грузы из Китая</li>
+							<li class="list__item">Комплектные грузы в/из стран ЕАЭС</li>
+							<li class="list__item">Комплектные грузы по России</li>
+							<li class="list__item">Опасные грузы</li>
+						</ul>
+						<div class="services__subtitle-box subtitle-box">
+							<svg class="services__icons icons-check">
+								<use xlink:href="@img/icons/icons.svg#check"></use>
+							</svg>
+							<h3 class="services__subtitle subtitle">Авиаперевозки</h3>
+						</div>
+
+						<div class="services__subtitle-box subtitle-box">
+							<svg class="services__icons icons-check">
+								<use xlink:href="@img/icons/icons.svg#check"></use>
+							</svg>
+							<h3 class="services__subtitle subtitle">Таможенное оформление</h3>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			@@include('html/_action-block.htm',{})
+			<section class="reviews" data-watch="navigator" data-watch-threshold="0.35">
+				<div class="reviews__container">
+					<div class="reviews__wrapper">
+						<h2 class="reviews__title title">Отзывы</h2>
+						
+					</div>
+				</div>
+			</section>
+			@@include('html/_action-block.htm',{})
+			<section class="contact" data-watch="navigator" data-watch-threshold="0.35">
+				<div class="contact__container">
+					<div class="contact__wrapper">
+						<h2 class="contact__title title">Контакты</h2>
 						
 					</div>
 				</div>

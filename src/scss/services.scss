@@ -1,11 +1,13 @@
 // services
 .services {
 	background: url("../img/bg-services-80.jpg") center / cover no-repeat;
-	height: 100vh;
+	
+	&__img {
+		width: 100%;
+		object-fit: cover;
+	}
 
-	&__wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-   }
+	&__list {
+		list-style-type: square;
+	}
 }

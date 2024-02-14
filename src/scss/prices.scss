@@ -1,14 +1,6 @@
 // prices
 .prices {
 
-   /* @media (max-width: $tablet) {
-      padding: 140px 0 40px;
-   }
-
-   @media (max-width: $mobileSmall) {
-      padding: 100px 0 20px;
-   } */
-
    &__wrapper {
       display: flex;
       flex-direction: column;
@@ -20,36 +12,7 @@
       &::after {
          left: 1%;
       }
-   }
-
-   &__subtitle-box {
-      align-self: flex-start;
-      display: flex;
-   }
-
-   &__icons-check {
-      position: relative;
-      top: 0;
-      flex-shrink: 0;
-      height: 35px;
-      width: 35px;
-      margin-right: 4px;
-      fill: $accentColor;
-
-      @media (max-width: $tablet) {
-         height: 32px;
-         width: 32px;
-         top: -1px;
-      }
-
-      @media (max-width: $mobile) {
-         height: 27px;
-         width: 27px;
-         top: 0;
-         margin-right: 3px;
-      }
-
-   }
+   }   
 }
 
 .grid-prices {

@@ -35,8 +35,8 @@
       transform: translateY(50px);
       text-shadow: 0 0 5px $mainColor;
 
-      @media (max-width:$pc) {
-         font-size: calc(toRem(50) + 30*((100vw - 320px) / (1200 - 320)));
+      @media (max-width:1500px) {
+         font-size: calc(toRem(50) + 10*((100vw - 320px) / (1200 - 320)));
       }
    }
 
@@ -55,8 +55,8 @@
       transform: translateY(50px);
       text-shadow: 0 0 5px $mainColor;
 
-      @media (max-width:$pc) {
-         font-size: calc(toRem(25) + 15*((100vw - 320px) / (1200 - 320)));
+      @media (max-width:1500px) {
+         font-size: calc(toRem(25) + 10*((100vw - 320px) / (1200 - 320)));
       }
 
       @media (max-width:$tablet) {
@@ -123,8 +123,8 @@
          line-height: 1.2;
          text-shadow: 0 0 15px $mainColor;
 
-         @media (max-width:$pc) {
-            font-size: calc(toRem(18) + 7*((100vw - 320px) / (1200 - 320)));
+         @media (max-width:1500px) {
+            font-size: calc(toRem(18) + 2*((100vw - 320px) / (1200 - 320)));
          }
       }
    }
