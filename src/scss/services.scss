@@ -1,13 +1,20 @@
 // services
 .services {
-	background: url("../img/bg-services.jpg") center / cover no-repeat fixed;
-	
-	&__img {
-		width: 100%;
-		height: auto;
-	}
+   background: url("../img/bg-services.jpg") center / cover no-repeat fixed;
+
+   &__img {
+      width: 100%;
+      height: auto;
+   }
 
 	&__list {
-		list-style-type: square;
+		padding-left: 20px;
 	}
+
+   ul li {
+      list-style-type: square;		
+   }
+
+
 }
+

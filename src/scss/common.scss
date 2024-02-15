@@ -85,6 +85,7 @@ h3 {
    position: relative;
    display: inline-block;
    transition: color 0.3s ease;
+	line-height: 120%;
 
    &::before {
       content: '';

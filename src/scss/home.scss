@@ -109,26 +109,28 @@
       text-align: center;
       font-weight: 500;
    }
+
+	.list {
+		&__item {
+			display: flex;
+			margin-bottom: toEm(35, 25);
+	
+			p {
+				text-transform: uppercase;
+				font-size: 25px;
+				font-weight: 500;
+				line-height: 1.2;
+				text-shadow: 0 0 15px $mainColor;
+	
+				@media (max-width:1500px) {
+					font-size: calc(toRem(18) + 2*((100vw - 320px) / (1200 - 320)));
+				}
+			}
+		}
+	}
+	
 }
 
-.list {
-   &__item {
-      display: flex;
-      margin-bottom: toEm(35, 25);
-
-      p {
-         text-transform: uppercase;
-         font-size: 25px;
-         font-weight: 500;
-         line-height: 1.2;
-         text-shadow: 0 0 15px $mainColor;
-
-         @media (max-width:1500px) {
-            font-size: calc(toRem(18) + 2*((100vw - 320px) / (1200 - 320)));
-         }
-      }
-   }
-}
 
 .preload {
    transition: none !important;
