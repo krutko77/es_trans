@@ -1,10 +1,10 @@
 // Секции
 section {
-   padding: 120px 0 120px;
+   padding: 110px 0 110px;
 
    @media (max-width:1500px) {
-      padding-top: calc(50px + 60*((100vw - 320px) / (1200 - 320)));
-      padding-bottom: calc(50px + 60*((100vw - 320px) / (1200 - 320)));
+      padding-top: calc(50px + 50*((100vw - 320px) / (1200 - 320)));
+      padding-bottom: calc(50px + 50*((100vw - 320px) / (1200 - 320)));
    }
 }
 
@@ -265,7 +265,7 @@ button:not(.swiper-button-prev, .swiper-button-next, .menu__icon),
 }
 
 .img-box {
-   width: 30%;
+   width: 400px;
 
    @media (max-width:$tablet) {
       width: 35%;
