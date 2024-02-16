@@ -27,6 +27,7 @@
 	list-style: none;
 	padding: 0;
 	z-index: 1;
+	padding: 0 40px 50px;
 }
 .swiper-vertical > .swiper-wrapper {
 	flex-direction: column;
@@ -166,7 +167,7 @@
 	width: 1px;
 	height: var(--swiper-virtual-size);
 }
-:root {
+/* :root {
 	--swiper-navigation-size: 44px;
 }
 .swiper-button-next,
@@ -578,3 +579,4 @@ button.swiper-pagination-bullet {
 	backface-visibility: hidden;
 	overflow: hidden;
 }
+ */

@@ -20,7 +20,7 @@ EffectFade, Lazy, Manipulation
 // Базові стилі
 import "../../scss/base/swiper.scss";
 // Повний набір стилів з scss/libs/swiper.scss
-// import "../../scss/libs/swiper.scss";
+import "../../scss/libs/swiper.scss";
 // Повний набір стилів з node_modules
 // import 'swiper/css';
 
@@ -33,12 +33,12 @@ function initSliders() {
 		new Swiper('.swiper', { // Вказуємо склас потрібного слайдера
 			// Підключаємо модулі слайдера
 			// для конкретного випадку
-			modules: [Navigation],
+			modules: [Navigation, Pagination],
 			observer: true,
 			observeParents: true,
-			slidesPerView: 1,
-			spaceBetween: 0,
-			//autoHeight: true,
+			slidesPerView: 3,
+			spaceBetween: 45,
+			autoHeight: true,
 			speed: 800,
 
 			//touchRatio: 0,
@@ -57,12 +57,13 @@ function initSliders() {
 			*/
 
 			// Пагінація
-			/*
+			
 			pagination: {
 				el: '.swiper-pagination',
-				clickable: true,
+				// clickable: true,
+				type: 'fraction',
 			},
-			*/
+			
 
 			// Скроллбар
 			/*
@@ -77,28 +78,22 @@ function initSliders() {
 				prevEl: '.swiper-button-prev',
 				nextEl: '.swiper-button-next',
 			},
-			/*
+			
 			// Брейкпоінти
 			breakpoints: {
-				640: {
+				320: {
 					slidesPerView: 1,
-					spaceBetween: 0,
+					spaceBetween: 45,
 					autoHeight: true,
 				},
 				768: {
 					slidesPerView: 2,
-					spaceBetween: 20,
 				},
 				992: {
 					slidesPerView: 3,
-					spaceBetween: 20,
-				},
-				1268: {
-					slidesPerView: 4,
-					spaceBetween: 30,
 				},
 			},
-			*/
+			
 			// Події
 			on: {
 
@@ -139,5 +134,5 @@ window.addEventListener("load", function (e) {
 	// Запуск ініціалізації слайдерів
 	initSliders();
 	// Запуск ініціалізації скролла на базі слайдера (за класом swiper_scroll)
-	//initSlidersScroll();
+	// initSlidersScroll();
 });
