@@ -65,7 +65,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="prices" data-watch="navigator" data-watch-threshold="0.35">
+			<section class="prices" data-watch="navigator" data-watch-threshold="0.25">
 				<div class="prices__container">
 					<div class="prices__wrapper">
 						<h2 class="prices__title title">Цены</h2>
@@ -215,16 +215,16 @@
 				</div>
 			</section>
 			@@include('html/_action-block.htm',{})
-			<section class="services" data-watch="navigator" data-watch-threshold="0.25">
+			<section class="services" data-watch="navigator" data-watch-threshold="0.15">
 				<div class="services__container">
 					<div class="services__wrapper">
 						<h2 class="services__title title">Услуги</h2>
 						<div class="clearfix margin-bottom-50">
 							<div class="services__img-box img-box float-left">
-								<img class="services__img" src="@img/services-img-1-400.jpg" width="400" height="300"
+								<img class="services__img" src="@img/services/services-img-1-400.jpg" width="400" height="300"
 									alt="фото автомобиля 'ЕС Транс'">
 							</div>
-							<p class="services__text margin-bottom-20">Наша компания выполняет перевозки грузов своими
+							<p class="services__text margin-bottom-20">ООО "ЕС Транс" выполняет перевозки грузов своими
 								автомобилями и привлеченным транспортном. Мы стремимся быть надежным партнером для всех, кто
 								нуждается в перевозке грузов, обеспечивая безопасную, эффективную и своевременную доставку.</p>
 							<p class="services__text margin-bottom-20">Мы устанавливаем доверительные отношения с нашими
@@ -233,7 +233,7 @@
 								потребности клиентов. Все наши автомобили оборудованы GPS системой отслеживания, поэтому мы
 								можем точно определить местоположение груза клиента в режиме 24/7.</p>
 							<div class="services__img-box img-box float-right">
-								<img class="services__img" src="@img/services-img-2-400.jpg" width="400" height="273"
+								<img class="services__img" src="@img/services/services-img-2-400.jpg" width="400" height="273"
 									alt="фото автомобиля 'ЕС Транс'">
 							</div>
 							<p class="services__text margin-bottom-20">Наша компания полностью осознаёт важность точной
@@ -243,7 +243,7 @@
 								на дороге и логистические условия. Мы стремимся к высокому уровню сервиса и гарантируем, что ваш
 								груз будет доставлен вовремя и в сохранности.</p>
 							<div class="services__img-box img-box float-left">
-								<img class="services__img" src="@img/services-img-3-400.jpg" width="400" height="300"
+								<img class="services__img" src="@img/services/services-img-3-400.jpg" width="400" height="300"
 									alt="фото автомобиля 'ЕС Транс'">
 							</div>
 							<p class="services__text margin-bottom-20">Основной приоритет нашей работы - это высокие стандарты
@@ -335,7 +335,50 @@
 		<div class="reviews__container">
 			<div class="reviews__wrapper">
 				<h2 class="reviews__title title">Отзывы</h2>
+				<!-- Оболочка слайдера -->
+				<div class="reviews__slider swiper margin-bottom-30">
+					<!-- Двигающееся часть слайдера -->
+					<div class="swiper__wrapper swiper-wrapper">
+						<!-- Слайд -->
+						<div class="swiper__slide swiper-slide">
+							<div class="swiper__image">
+								<img class="swiper__img" src="@img/reviews/small/Danfoss-small.jpg"
+									alt="благодарственное письмо" width="350" height="481">
+								<a class="swiper__link link" href="#" data-popup="#popup">Увеличить</a>
+							</div>
+						</div>
 
+						<div class="swiper__slide swiper-slide">
+							<div class="swiper__image">
+								<img class="swiper__img" src="@img/reviews/small/Green-small.jpg" alt="благодарственное письмо"
+									width="350" height="481">
+								<a class="swiper__link link" href="#" data-popup="#popup-2">Увеличить</a>
+							</div>
+						</div>
+
+						<div class="swiper__slide swiper-slide">
+							<div class="swiper__image">
+								<img class="swiper__img" src="@img/reviews/small/NEXT-small.jpg" alt="благодарственное письмо"
+									width="350" height="481">
+								<a class="swiper__link link" href="#" data-popup="#popup-3">Увеличить</a>
+							</div>
+						</div>
+
+						<div class="swiper__slide swiper-slide">
+							<div class="swiper__image">
+								<img class="swiper__img" src="@img/reviews/small/Spasskie-small.jpg"
+									alt="благодарственное письмо" width="350" height="481">
+								<a class="swiper__link link" href="#" data-popup="#popup-4">Увеличить</a>
+							</div>
+						</div>
+
+					</div>
+					<!-- Если нужна пагинация -->
+					<div class="swiper-pagination"></div>
+					<!-- Если нужна навигация (влево/вправо) -->
+					<button type="button" class="swiper-button-prev"></button>
+					<button type="button" class="swiper-button-next"></button>
+				</div>
 			</div>
 		</div>
 	</section>
