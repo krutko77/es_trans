@@ -339,7 +339,13 @@
 		<div class="reviews__container">
 			<div class="reviews__wrapper">
 				<h2 class="reviews__title title">Отзывы</h2>
-				<h3 class="reviews__subtitle subtitle margin-bottom-50">Мы гордимся нашими клиентами!</h3>
+				<div class="reviews__subtitle-box subtitle-box margin-bottom-50">
+					<svg class="reviews__icons icons-check">
+						<use xlink:href="@img/icons/icons.svg#check"></use>
+					</svg>
+					<h3 class="reviews__subtitle subtitle">Мы гордимся нашими клиентами!</h3>
+				</div>
+				<!-- <h3 class="reviews__subtitle subtitle margin-bottom-50">Мы гордимся нашими клиентами!</h3> -->
 				<!-- Оболочка слайдера -->
 				<div class="reviews__slider swiper margin-bottom-30">
 					<!-- Двигающееся часть слайдера -->
@@ -379,7 +385,7 @@
 
 					</div>
 					<!-- Если нужна пагинация -->
-					<div class="swiper-pagination"></div>
+					<!-- <div class="swiper-pagination"></div> -->
 					<!-- Если нужна навигация (влево/вправо) -->
 					<button type="button" class="swiper-button-prev"></button>
 					<button type="button" class="swiper-button-next"></button>
@@ -399,6 +405,7 @@
 	</main>
 	@@include('html/_footer.htm',{})
 	</div>
+	@@include('html/_popup.htm',{})
 	@@include('html/_js.htm',{})
 </body>
 

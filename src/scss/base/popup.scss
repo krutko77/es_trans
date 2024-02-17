@@ -47,15 +47,34 @@ body::after {
 	align-items: center;
 }
 .popup__content {
+	text-align: right;
 	visibility: hidden;
 	transform: scale(0);
 	transition: transform 0.3s ease 0s;
-	background-color: #eee;
+	background-color: #eee;	
 	padding: 20px;
 	width: 100%;
-	max-width: 900px;
+	max-width: 600px;
 	border-radius: 20px;
 	.lock & {
 		visibility: visible;
 	}
+
+	@media (max-width:$mobileSmall) {
+      padding: 10px;
+   }
+
+	button {
+		color: $accentColor;
+		transition: color 0.3s ease;
+
+		&:hover {
+			color: $secondLinkColor;
+		}
+	}
+}
+.popup__img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
 }

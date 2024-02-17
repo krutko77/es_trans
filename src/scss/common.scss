@@ -229,7 +229,7 @@ button:not(.swiper-button-prev, .swiper-button-next, .menu__icon),
 }
 
 .button-accent._watcher-view:active, .action-button._watcher-view:active,
-.button-back:active,
+.button-back:active, .popup button:active,
 .button-offer:active {
    transform: translate(1px, 2px);
    transition: transform 0.3s ease;
