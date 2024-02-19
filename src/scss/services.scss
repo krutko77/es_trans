@@ -1,6 +1,6 @@
 // services
 .services {
-   background: url("../img/bg-services.jpg") center / cover no-repeat fixed;
+   background: url("../img/services/bg-services.jpg") center / cover no-repeat fixed;
 
    &__img {
       width: 100%;
@@ -14,7 +14,5 @@
    ul li {
       list-style-type: square;		
    }
-
-
 }
 

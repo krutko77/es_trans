@@ -149,6 +149,7 @@ body {
 
 // Підключення стилів окремих блоків
 @import "header";
+@import "header-back";
 @import "prices";
 @import "action-block";
 @import "services";
@@ -158,3 +159,6 @@ body {
 
 // Підключення стилів окремих сторінок
 @import "home";
+@import "about";
+@import "thank-you-page";
+@import "error-404";

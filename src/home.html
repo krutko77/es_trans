@@ -59,7 +59,7 @@
 						</div>
 						<div class="home__action action">
 							<p class="action__text margin-bottom-30">Узнайте стоимость вашего заказа</p>
-							<button class="button button-offer preload" aria-label="Кнопка рассчитать стоимость">Рассчитать
+							<button class="button offer-button preload" aria-label="Кнопка рассчитать стоимость">Рассчитать
 								стоимость</button>
 						</div>
 					</div>
@@ -217,248 +217,244 @@
 			@@include('html/_action-block.htm',{})
 			<section class="services" data-watch="navigator" data-watch-threshold="0.15">
 				<div class="services__container">
-					<div class="services__wrapper">
-						<h2 class="services__title title">Услуги</h2>
-						<div class="clearfix margin-bottom-50">
-							<div class="services__img-box img-box float-left">
-								<img class="services__img" src="@img/services/services-img-1-400.jpg" width="400" height="300"
-									alt="фото автомобиля 'ЕС Транс'">
-							</div>
-							<p class="services__text margin-bottom-20">ООО "ЕС Транс" выполняет перевозки грузов своими
-								автомобилями и привлеченным транспортном. Мы стремимся быть надежным партнером для всех, кто
-								нуждается в перевозке грузов, обеспечивая безопасную, эффективную и своевременную доставку.</p>
-							<p class="services__text margin-bottom-20">Мы устанавливаем доверительные отношения с нашими
-								клиентами, предлагаем прозрачную коммуникацию на всех этапах перевозки, предоставляем информацию
-								о статусе груза, предупреждаем о возможных задержках и оперативно реагируем на запросы и
-								потребности клиентов. Все наши автомобили оборудованы GPS системой отслеживания, поэтому мы
-								можем точно определить местоположение груза клиента в режиме 24/7.</p>
-							<div class="services__img-box img-box float-right">
-								<img class="services__img" src="@img/services/services-img-2-400.jpg" width="400" height="273"
-									alt="фото автомобиля 'ЕС Транс'">
-							</div>
-							<p class="services__text margin-bottom-20">Наша компания полностью осознаёт важность точной
-								доставки грузов в срок для наших клиентов. Поэтому мы предлагаем надёжные графики и оптимальные
-								маршруты, чтобы обеспечить своевременную доставку груза в назначенное место.</p>
-							<p class="services__text margin-bottom-20">Опытные логисты ООО "ЕС Транс" тщательно планирует
-								каждую
-								перевозку, учитывая особенности груза, препятствия
-								на дороге и логистические условия. Мы стремимся к высокому уровню сервиса и гарантируем, что ваш
-								груз будет доставлен вовремя и в сохранности.</p>
-							<div class="services__img-box img-box float-left">
-								<img class="services__img" src="@img/services/services-img-3-400.jpg" width="400" height="300"
-									alt="фото автомобиля 'ЕС Транс'">
-							</div>
-							<p class="services__text margin-bottom-20">Основной приоритет нашей работы - это высокие стандарты
-								надежности и безопасности грузоперевозок. Автопарк ООО "ЕС Транс" состоит из современных
-								грузовых
-								автомобилей, оснащенных передовыми технологиями и системами безопасности. Автомобили регулярно
-								проходят техническое обслуживание и проверки, чтобы гарантировать безопасность на дороге.
-								Водители нашей компании проходят необходимую подготовку и обучение в области безопасности на
-								дороге.</p>
-							<p class="services__text">Так же мы предлагаем возможность страхования вашего груза на случай
-								непредвиденных событий, таких как повреждение, утрата или кража. Мы работаем с надежными
-								страховыми компаниями, чтобы обеспечить надежную защиту вашего груза во время перевозки.</p>
+					<h2 class="services__title title">Услуги</h2>
+					<div class="clearfix margin-bottom-50">
+						<div class="services__img-box img-box float-left">
+							<img class="services__img" src="@img/services/services-img-1-400.jpg" width="400" height="300"
+								alt="фото автомобиля 'ЕС Транс'">
 						</div>
-						<div class="services__subtitle-box subtitle-box">
-							<svg class="services__icons icons-check">
-								<use xlink:href="@img/icons/icons.svg#check"></use>
-							</svg>
-							<h3 class="services__subtitle subtitle">Перевозка грузов автомобилями</h3>
+						<p class="services__text margin-bottom-20">ООО "ЕС Транс" выполняет перевозки грузов своими
+							автомобилями и привлеченным транспортном. Мы стремимся быть надежным партнером для всех, кто
+							нуждается в перевозке грузов, обеспечивая безопасную, эффективную и своевременную доставку.</p>
+						<p class="services__text margin-bottom-20">Мы устанавливаем доверительные отношения с нашими
+							клиентами, предлагаем прозрачную коммуникацию на всех этапах перевозки, предоставляем информацию
+							о статусе груза, предупреждаем о возможных задержках и оперативно реагируем на запросы и
+							потребности клиентов. Все наши автомобили оборудованы GPS системой отслеживания, поэтому мы
+							можем точно определить местоположение груза клиента в режиме 24/7.</p>
+						<div class="services__img-box img-box float-right">
+							<img class="services__img" src="@img/services/services-img-2-400.jpg" width="400" height="273"
+								alt="фото автомобиля 'ЕС Транс'">
 						</div>
-						<ul class="services__list list margin-bottom-50">
-							<li class="list__item margin-bottom-20">
-								<p class="services__text margin-bottom-10 europe"> Комплектные и сборные грузы из Европы.</p>
-								<p>Мы обеспечиваем
-									полное покрытие Европы и работаем с опытными логистическими партнерами, чтобы гарантировать
-									надежность и безопасность перевозки груза. Независимо от размера вашего груза или его
-									особенностей, мы готовы предложить оптимальное решение для его перевозки из Европы. Для
-									доставки
-									сборных грузов, мы используем склады консолидации в Польше и Литве.</p>
-							</li>
-							<li class="list__item margin-bottom-20">
-								<p class="services__text margin-bottom-10 china">Комплектные и сборные грузы из Китая.</p>
-								<p class="services__text margin-bottom-10">Наша компания предлагает услуги по автомобильной
-									перевозке
-									комплектных и сборных грузов из
-									Китая с помощью наших партнеров по автоперевозкам. Мы устанавливаем долгосрочные партнерские
-									отношения с проверенными и надежными автоперевозчиками, чтобы обеспечить качественную и
-									своевременную доставку грузов нашим клиентам.</p>
-								<p>Наши логисты тесно сотрудничают с партнерами по автоперевозкам, чтобы организовать забор
-									груза с отправного пункта в Китае, выполнить необходимые таможенные формальности и доставить
-									груз в пункт назначения.</p>
-							</li>
-							<li class="list__item margin-bottom-20">
-								<p class="services__text margin-bottom-10 tlc">Комплектные и опасные грузы в/из стран ЕАЭС</p>
-								<p class="services__text">Мы перевозим грузы в/из стран Евразийского экономического союза (ЕАЭС)
-									с использованием
-									собственного автопарка. Наши автомобили оборудованы и имеют специальные разрешения на
-									перевозку опасных грузов, а наши менеджеры и водители прошли специальное обучение. Так же
-									наши машины
-									участвуют в доставке грузов из Европы, перегружаясь на приграничных ТЛЦ и доставляя грузы в
-									Россию в режиме таможенного транзита.</p>
-							</li>
-							<li class="list__item">
-								<p class="services__text margin-bottom-10 russia">Комплектные и опасные грузы по России</p>
-								<p class="services__text">Перевозки по России мы осуществляем собственными автомобилями.</p>
-							</li>
-						</ul>
-						<div class="services__subtitle-box subtitle-box">
-							<svg class="services__icons icons-check">
-								<use xlink:href="@img/icons/icons.svg#check"></use>
-							</svg>
-							<h3 class="services__subtitle subtitle">Авиаперевозки</h3>
-						</div>
-						<p class="services__text margin-bottom-10 avia">Если вам требуется надежный партнер для доставки
-							грузов самолетом из
-							Китая, Индии, стран юго-восточной Азии и ОАЭ, наша транспортная компания готова предложить выгодные
-							решения, обеспечивая быструю и
-							безопасную доставку ваших товаров.
+						<p class="services__text margin-bottom-20">Наша компания полностью осознаёт важность точной
+							доставки грузов в срок для наших клиентов. Поэтому мы предлагаем надёжные графики и оптимальные
+							маршруты, чтобы обеспечить своевременную доставку груза в назначенное место.</p>
+						<p class="services__text margin-bottom-20">Опытные логисты ООО "ЕС Транс" тщательно планирует
+							каждую
+							перевозку, учитывая особенности груза, препятствия
+							на дороге и логистические условия. Мы стремимся к высокому уровню сервиса и гарантируем, что ваш
+							груз будет доставлен вовремя и в сохранности.
 						</p>
-						<p class="services__text margin-bottom-10">Cкорость и надежность являются ключевыми факторами в
-							доставке грузов
-							авиационным транспортом. Поэтому мы стремимся предложить нашим клиентам высокий уровень
-							обслуживания, соблюдая сроки и гарантируя сохранность груза.</p>
-						<p class="services__text margin-bottom-50"">Мы сотрудничаем с различными авиакомпаниями и агентами, что позволяет нам выбирать оптимальные маршруты и гибкие варианты доставки. Мы организовываем забор груза с отправного пункта, обеспечиваем его правильную упаковку и таможенное оформление, а затем доставляем груз самолетом в пункт назначения.</p>
-						<div class=" services__subtitle-box subtitle-box">
-							<svg class="services__icons icons-check">
-								<use xlink:href="@img/icons/icons.svg#check"></use>
-							</svg>
-						<h3 class="services__subtitle subtitle">Таможенное оформление</h3>
+						<div class="services__img-box img-box float-left">
+							<img class="services__img" src="@img/services/services-img-3-400.jpg" width="400" height="300"
+								alt="фото автомобиля 'ЕС Транс'">
+						</div>
+						<p class="services__text margin-bottom-20">Основной приоритет нашей работы - это высокие стандарты
+							надежности и безопасности грузоперевозок. Автопарк ООО "ЕС Транс" состоит из современных
+							грузовых
+							автомобилей, оснащенных передовыми технологиями и системами безопасности. Автомобили регулярно
+							проходят техническое обслуживание и проверки, чтобы гарантировать безопасность на дороге.
+							Водители нашей компании проходят необходимую подготовку и обучение в области безопасности на
+							дороге.</p>
+						<p class="services__text">Так же мы предлагаем возможность страхования вашего груза на случай
+							непредвиденных событий, таких как повреждение, утрата или кража. Мы работаем с надежными
+							страховыми компаниями, чтобы обеспечить надежную защиту вашего груза во время перевозки.</p>
 					</div>
-					<p class="services__text customs">Мы готовы оказать свои услуги по таможенному сопровождению грузов в
-						Себежской, Смоленской и Московской
-						областных таможнях. Независимо от размера вашего груза и сложности таможенных процедур, мы сделаем все
-						возможное, чтобы обеспечить безопасность и успешное прохождение груза через таможню.</p>
-					<p class="services__text margin-bottom-10"></p>Доверьте нам
-					таможенное оформление грузов и сосредоточьтесь на своем бизнесе!</p>
+					<div class="services__subtitle-box subtitle-box">
+						<svg class="services__icons icons-check">
+							<use xlink:href="@img/icons/icons.svg#check"></use>
+						</svg>
+						<h3 class="services__subtitle subtitle">Перевозка грузов автомобилями</h3>
+					</div>
+					<ul class="services__list list margin-bottom-50">
+						<li class="list__item margin-bottom-20">
+							<p class="services__text margin-bottom-10 europe"> Комплектные и сборные грузы из Европы.</p>
+							<p>Мы обеспечиваем
+								полное покрытие Европы и работаем с опытными логистическими партнерами, чтобы гарантировать
+								надежность и безопасность перевозки груза. Независимо от размера вашего груза или его
+								особенностей, мы готовы предложить оптимальное решение для его перевозки из Европы. Для
+								доставки
+								сборных грузов, мы используем склады консолидации в Польше и Литве.</p>
+						</li>
+						<li class="list__item margin-bottom-20">
+							<p class="services__text margin-bottom-10 china">Комплектные и сборные грузы из Китая.</p>
+							<p class="services__text margin-bottom-10">Наша компания предлагает услуги по автомобильной
+								перевозке
+								комплектных и сборных грузов из
+								Китая с помощью наших партнеров по автоперевозкам. Мы устанавливаем долгосрочные партнерские
+								отношения с проверенными и надежными автоперевозчиками, чтобы обеспечить качественную и
+								своевременную доставку грузов нашим клиентам.</p>
+							<p>Наши логисты тесно сотрудничают с партнерами по автоперевозкам, чтобы организовать забор
+								груза с отправного пункта в Китае, выполнить необходимые таможенные формальности и доставить
+								груз в пункт назначения.</p>
+						</li>
+						<li class="list__item margin-bottom-20">
+							<p class="services__text margin-bottom-10 tlc">Комплектные и опасные грузы в/из стран ЕАЭС</p>
+							<p class="services__text">Мы перевозим грузы в/из стран Евразийского экономического союза (ЕАЭС)
+								с использованием
+								собственного автопарка. Наши автомобили оборудованы и имеют специальные разрешения на
+								перевозку опасных грузов, а наши менеджеры и водители прошли специальное обучение. Так же
+								наши машины
+								участвуют в доставке грузов из Европы, перегружаясь на приграничных ТЛЦ и доставляя грузы в
+								Россию в режиме таможенного транзита.</p>
+						</li>
+						<li class="list__item">
+							<p class="services__text margin-bottom-10 russia">Комплектные и опасные грузы по России</p>
+							<p class="services__text">Перевозки по России мы осуществляем собственными автомобилями.</p>
+						</li>
+					</ul>
+					<div class="services__subtitle-box subtitle-box">
+						<svg class="services__icons icons-check">
+							<use xlink:href="@img/icons/icons.svg#check"></use>
+						</svg>
+						<h3 class="services__subtitle subtitle">Авиаперевозки</h3>
+					</div>
+					<p class="services__text margin-bottom-10 avia">Если вам требуется надежный партнер для доставки
+						грузов самолетом из
+						Китая, Индии, стран юго-восточной Азии и ОАЭ, наша транспортная компания готова предложить выгодные
+						решения, обеспечивая быструю и
+						безопасную доставку ваших товаров.
+					</p>
+					<p class="services__text margin-bottom-10">Cкорость и надежность являются ключевыми факторами в
+						доставке грузов
+						авиационным транспортом. Поэтому мы стремимся предложить нашим клиентам высокий уровень
+						обслуживания, соблюдая сроки и гарантируя сохранность груза.</p>
+					<p class="services__text margin-bottom-50"">Мы сотрудничаем с различными авиакомпаниями и агентами, что позволяет нам выбирать оптимальные маршруты и гибкие варианты доставки. Мы организовываем забор груза с отправного пункта, обеспечиваем его правильную упаковку и таможенное оформление, а затем доставляем груз самолетом в пункт назначения.</p>
+					<div class=" services__subtitle-box subtitle-box">
+						<svg class="services__icons icons-check">
+							<use xlink:href="@img/icons/icons.svg#check"></use>
+						</svg>
+					<h3 class="services__subtitle subtitle">Таможенное оформление</h3>
 				</div>
+				<p class="services__text customs">Мы готовы оказать свои услуги по таможенному сопровождению грузов в
+					Себежской, Смоленской и Московской
+					областных таможнях. Независимо от размера вашего груза и сложности таможенных процедур, мы сделаем все
+					возможное, чтобы обеспечить безопасность и успешное прохождение груза через таможню.</p>
+				<p class="services__text margin-bottom-10"></p>Доверьте нам
+				таможенное оформление грузов и сосредоточьтесь на своем бизнесе!</p>
 	</div>
 	</section>
 	@@include('html/_action-block.htm',{})
 	<section class="reviews" data-watch="navigator" data-watch-threshold="0.35">
 		<div class="reviews__container">
-			<div class="reviews__wrapper">
-				<h2 class="reviews__title title">Отзывы</h2>
-				<div class="reviews__subtitle-box subtitle-box margin-bottom-30">
-					<svg class="reviews__icons icons-check">
-						<use xlink:href="@img/icons/icons.svg#check"></use>
-					</svg>
-					<h3 class="reviews__subtitle subtitle">Мы гордимся нашими клиентами!</h3>
-					<div class="reviews__video-box">
-						<!-- <video width="50" height="50" autoplay loop muted playsinline>
-											<source src="@img/swipe-left/hand-swipe.webm" type="video/webm">
-											<source src="@img/swipe-left/hand-swipe.mp4" type="video/mp4">
-										</video> -->
-						<img src="@img/swipe-left/hand-swipe.gif" width="70" height="35" alt="иконка руки">
-					</div>
-				</div>
-				<!-- <h3 class="reviews__subtitle subtitle margin-bottom-50">Мы гордимся нашими клиентами!</h3> -->
-				<!-- Оболочка слайдера -->
-				<div class="reviews__slider swiper margin-bottom-30">
-					<!-- Двигающееся часть слайдера -->
-					<div class="swiper__wrapper swiper-wrapper">
-						<!-- Слайд -->
-						<div class="swiper__slide swiper-slide">
-							<div class="swiper__image">
-								<img class="swiper__img" src="@img/reviews/small/Danfoss-small.jpg"
-									alt="благодарственное письмо" width="350" height="481">
-								<div class="swiper__label"><a class="swiper__link link" href="#"
-										data-popup="#popup">Увеличить</a></div>
-							</div>
-						</div>
-
-						<div class="swiper__slide swiper-slide">
-							<div class="swiper__image">
-								<img class="swiper__img" src="@img/reviews/small/Green-small.jpg" alt="благодарственное письмо"
-									width="350" height="481">
-								<div class="swiper__label"><a class="swiper__link link" href="#"
-										data-popup="#popup-2">Увеличить</a></div>
-							</div>
-						</div>
-
-						<div class="swiper__slide swiper-slide">
-							<div class="swiper__image">
-								<img class="swiper__img" src="@img/reviews/small/NEXT-small.jpg" alt="благодарственное письмо"
-									width="350" height="481">
-								<div class="swiper__label"><a class="swiper__link link" href="#"
-										data-popup="#popup-3">Увеличить</a></div>
-							</div>
-						</div>
-
-						<div class="swiper__slide swiper-slide">
-							<div class="swiper__image">
-								<img class="swiper__img" src="@img/reviews/small/Spasskie-small.jpg"
-									alt="благодарственное письмо" width="350" height="481">
-								<div class="swiper__label"><a class="swiper__link link" href="#"
-										data-popup="#popup-4">Увеличить</a></div>
-							</div>
-						</div>
-
-					</div>
-					<!-- Если нужна пагинация -->
-					<!-- <div class="swiper-pagination"></div> -->
-					<!-- Если нужна навигация (влево/вправо) -->
-					<button type="button" class="swiper-button-prev"></button>
-					<button type="button" class="swiper-button-next"></button>
+			<h2 class="reviews__title title">Отзывы</h2>
+			<div class="reviews__subtitle-box subtitle-box margin-bottom-30">
+				<svg class="reviews__icons icons-check">
+					<use xlink:href="@img/icons/icons.svg#check"></use>
+				</svg>
+				<h3 class="reviews__subtitle subtitle">Мы гордимся нашими клиентами!</h3>
+				<div class="reviews__video-box">
+					<!-- <video width="50" height="50" autoplay loop muted playsinline>
+													<source src="@img/swipe-left/hand-swipe.webm" type="video/webm">
+													<source src="@img/swipe-left/hand-swipe.mp4" type="video/mp4">
+												</video> -->
+					<img src="@img/swipe-left/hand-swipe.gif" width="70" height="35" alt="иконка руки">
 				</div>
 			</div>
+			<!-- <h3 class="reviews__subtitle subtitle margin-bottom-50">Мы гордимся нашими клиентами!</h3> -->
+			<!-- Оболочка слайдера -->
+			<div class="reviews__slider swiper margin-bottom-30">
+				<!-- Двигающееся часть слайдера -->
+				<div class="swiper__wrapper swiper-wrapper">
+					<!-- Слайд -->
+					<div class="swiper__slide swiper-slide">
+						<div class="swiper__image">
+							<img class="swiper__img" src="@img/reviews/small/Danfoss-small.jpg" alt="благодарственное письмо"
+								width="350" height="481">
+							<div class="swiper__label"><a class="swiper__link link" href="#" data-popup="#popup">Увеличить</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper__slide swiper-slide">
+						<div class="swiper__image">
+							<img class="swiper__img" src="@img/reviews/small/Green-small.jpg" alt="благодарственное письмо"
+								width="350" height="481">
+							<div class="swiper__label"><a class="swiper__link link" href="#"
+									data-popup="#popup-2">Увеличить</a></div>
+						</div>
+					</div>
+
+					<div class="swiper__slide swiper-slide">
+						<div class="swiper__image">
+							<img class="swiper__img" src="@img/reviews/small/NEXT-small.jpg" alt="благодарственное письмо"
+								width="350" height="481">
+							<div class="swiper__label"><a class="swiper__link link" href="#"
+									data-popup="#popup-3">Увеличить</a></div>
+						</div>
+					</div>
+
+					<div class="swiper__slide swiper-slide">
+						<div class="swiper__image">
+							<img class="swiper__img" src="@img/reviews/small/Spasskie-small.jpg" alt="благодарственное письмо"
+								width="350" height="481">
+							<div class="swiper__label"><a class="swiper__link link" href="#"
+									data-popup="#popup-4">Увеличить</a></div>
+						</div>
+					</div>
+
+				</div>
+				<!-- Если нужна пагинация -->
+				<!-- <div class="swiper-pagination"></div> -->
+				<!-- Если нужна навигация (влево/вправо) -->
+				<button type="button" class="swiper-button-prev"></button>
+				<button type="button" class="swiper-button-next"></button>
+			</div>
 		</div>
-	</section>
+	</section> -->
 	@@include('html/_action-block.htm',{})
 	<section class="contact" data-watch="navigator" data-watch-threshold="0.3">
 		<div class="contact__container">
-			<div class="contact__wrapper">
-				<h2 class="contact__title title">Контакты</h2>
-				<div class="contact__content">
-					<div class="contact__company">
-						<ul class="contact__list list margin-bottom-20">
-							<li class="list__item margin-bottom-20">
-								<p class="list__item-text">ООО «ЕС Транс»</p>
-							</li>
-							<li class="list__item margin-bottom-20">
-								<div class="list__item-wrapper">
-									<span class="list__item-icon _icon-phone-flip"></span><a href="tel:74957753078"
-										class="list__item-link link">+7 (495) 775-30-78</a>
-								</div>
-							</li>
-							<li class="list__item margin-bottom-20">
-								<div class="list__item-wrapper">
-									<span class="list__item-icon _icon-email"></span><a href="mailto:moscow@es-trans.pro"
-										class="list__item-link link">moscow@es-trans.pro</a>
-								</div>
-							</li>
-							<li class="list__item margin-bottom-20">
-								<div class="list__item-wrapper location">
-									<span class="list__item-icon _icon-location-dot"></span>
-									<p class="list__item-link">Россия, 141400, Московская область,
-										г. Химки, Коммунальный пр., д.2</p>
-								</div>
-							</li>
-							<li class="list__item">
-								<p class="list__item-text">ИНН/КПП 5047078788 / 504701001</p>
-								<p class="list__item-text">ОГРН 1065047062574</p>
-							</li>
-						</ul>
-						<p class=" contact__text margin-bottom-20">Для организации письменного общения в формате онлайн,
-							пожалуйста пишите нам в мессенджеры:</p>
-						<div class="contact__social">
-							<a class="contact__link-icon" href="https://t.me/ESTrans1" target="_blank">
-								<svg class="icon">
-									<use xlink:href="@img/icons/icons.svg#telegram"></use>
-								</svg>
-							</a>
-							<a class="contact__link-icon" href="whatsapp://send?phone=79872294675" target="_blank">
-								<svg class="icon">
-									<use xlink:href="@img/icons/icons.svg#whatsapp"></use>
-								</svg>
-							</a>
-						</div>
+			<h2 class="contact__title title">Контакты</h2>
+			<div class="contact__content">
+				<div class="contact__company">
+					<ul class="contact__list list margin-bottom-20">
+						<li class="list__item margin-bottom-20">
+							<p class="list__item-text">ООО «ЕС Транс»</p>
+						</li>
+						<li class="list__item margin-bottom-20">
+							<div class="list__item-wrapper">
+								<span class="list__item-icon _icon-phone-flip"></span><a href="tel:74957753078"
+									class="list__item-link link">+7 (495) 775-30-78</a>
+							</div>
+						</li>
+						<li class="list__item margin-bottom-20">
+							<div class="list__item-wrapper">
+								<span class="list__item-icon _icon-email"></span><a href="mailto:moscow@es-trans.pro"
+									class="list__item-link link">moscow@es-trans.pro</a>
+							</div>
+						</li>
+						<li class="list__item margin-bottom-20">
+							<div class="list__item-wrapper location">
+								<span class="list__item-icon _icon-location-dot"></span>
+								<p class="list__item-link">Россия, 141400, Московская область,
+									г. Химки, Коммунальный пр., д.2</p>
+							</div>
+						</li>
+						<li class="list__item">
+							<p class="list__item-text">ИНН/КПП 5047078788 / 504701001</p>
+							<p class="list__item-text">ОГРН 1065047062574</p>
+						</li>
+					</ul>
+					<p class=" contact__text margin-bottom-20">Для организации письменного общения в формате онлайн,
+						пожалуйста пишите нам в мессенджеры:</p>
+					<div class="contact__social">
+						<a class="contact__link-icon" href="https://t.me/ESTrans1" target="_blank">
+							<svg class="icon">
+								<use xlink:href="@img/icons/icons.svg#telegram"></use>
+							</svg>
+						</a>
+						<a class="contact__link-icon" href="whatsapp://send?phone=79872294675" target="_blank">
+							<svg class="icon">
+								<use xlink:href="@img/icons/icons.svg#whatsapp"></use>
+							</svg>
+						</a>
 					</div>
-					<div class="contact__map">
-						<iframe
-							src="https://yandex.ru/map-widget/v1/?um=constructor%3A9d231bda729e55daf8e0ab7341ed242b99f2c48478d79f506328277b903feb53&amp;source=constructor"
-							width=100% height=auto frameborder="0"></iframe>
-					</div>
+				</div>
+				<div class="contact__map">
+					<iframe
+						src="https://yandex.ru/map-widget/v1/?um=constructor%3A9d231bda729e55daf8e0ab7341ed242b99f2c48478d79f506328277b903feb53&amp;source=constructor"
+						width=100% height=auto frameborder="0">
+					</iframe>
 				</div>
 			</div>
 		</div>

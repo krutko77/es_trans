@@ -1,0 +1,13 @@
+// about
+.about {
+	padding: 110px 0 0;
+
+   @media (max-width:1500px) {
+      padding-top: calc(50px + 50*((100vw - 320px) / (1200 - 320)));      
+   }
+
+	.about__story, .about__team, .about__garage {
+		min-height: 400px;
+		padding: 0;
+	}
+}

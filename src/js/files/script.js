@@ -4,8 +4,8 @@ import { isMobile } from "./functions.js";
 import { flsModules } from "./modules.js";
 
 // Отключение transition до полной загрузки страницы
-if ( document.querySelector('.button-offer') ) {  //
-	let elem = document.querySelector('.button-offer'); 
+if ( document.querySelector('.offer-button') ) {  //
+	let elem = document.querySelector('.offer-button'); 
 
 			window.onload = function() {
 			elem.classList.remove('preload');
@@ -13,8 +13,8 @@ if ( document.querySelector('.button-offer') ) {  //
 }
 
   // Кнопка НАЗАД
-if ( document.querySelector('.button-back') ) {  // Проверяем наличие элемента на странице
-	document.querySelector('.button-back').onclick = function(){ // Клик по кнопке НАЗАД
+if ( document.querySelector('.back-button') ) {  // Проверяем наличие элемента на странице
+	document.querySelector('.back-button').onclick = function(){ // Клик по кнопке НАЗАД
 		window.history.go(-1); return false;// возвращаемся назад
 	};
 }
