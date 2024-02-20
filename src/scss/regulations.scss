@@ -1,0 +1,21 @@
+// regulations
+.policy, .contract {
+   padding: 180px 0 110px;
+
+   @media (max-width:1500px) {
+      padding-top: calc(50px + 50*((100vw - 320px) / (1200 - 320)));
+      padding-bottom: calc(50px + 50*((100vw - 320px) / (1200 - 320)));
+   }
+
+	ul, .padding-left {
+		padding-left: 20px;
+	}
+
+   ul li {
+      list-style-type: disc;
+   }
+
+	.no-style {
+		list-style-type: none;
+	}
+}
