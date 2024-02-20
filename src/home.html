@@ -337,11 +337,22 @@
 	<section class="reviews" data-watch="navigator" data-watch-threshold="0.35">
 		<div class="reviews__container">
 			<h2 class="reviews__title title">Отзывы</h2>
-			<div class="reviews__subtitle-box subtitle-box margin-bottom-30">
+			<div class="reviews__subtitle-box subtitle-box">
 				<svg class="reviews__icons icons-check">
 					<use xlink:href="@img/icons/icons.svg#check"></use>
 				</svg>
 				<h3 class="reviews__subtitle subtitle">Мы гордимся нашими клиентами!</h3>
+			</div>
+			<ul class="reviews__list list margin-bottom-80">
+				<li class="list__item"><img class="list__img" src="@img/reviews/logo-60/1.png" alt="логотип"></li>
+				<li class="list__item"><img class="list__img" src="@img/reviews/logo-60/2.png" alt="логотип"></li>
+				<li class="list__item"><img class="list__img" src="@img/reviews/logo-60/3.png" alt="логотип"></li>
+			</ul>
+			<div class="reviews__subtitle-box subtitle-box margin-bottom-30">
+				<svg class="reviews__icons icons-check">
+					<use xlink:href="@img/icons/icons.svg#check"></use>
+				</svg>
+				<h3 class="reviews__subtitle subtitle">Письма о качестве услуг ООО "ЕС Транс"</h3>
 				<div class="reviews__video-box">
 					<!-- <video width="50" height="50" autoplay loop muted playsinline>
 													<source src="@img/swipe-left/hand-swipe.webm" type="video/webm">
@@ -392,6 +403,24 @@
 						</div>
 					</div>
 
+					<div class="swiper__slide swiper-slide">
+						<div class="swiper__image">
+							<img class="swiper__img" src="@img/reviews/small/KHPS-small.jpg" alt="благодарственное письмо"
+								width="350" height="481">
+							<div class="swiper__label"><a class="swiper__link link" href="#"
+									data-popup="#popup-5">Увеличить</a></div>
+						</div>
+					</div>
+
+					<div class="swiper__slide swiper-slide">
+						<div class="swiper__image">
+							<img class="swiper__img" src="@img/reviews/small/Kvarta-Stal-small.jpg"
+								alt="благодарственное письмо" width="350" height="481">
+							<div class="swiper__label"><a class="swiper__link link" href="#"
+									data-popup="#popup-6">Увеличить</a></div>
+						</div>
+					</div>
+
 				</div>
 				<!-- Если нужна пагинация -->
 				<!-- <div class="swiper-pagination"></div> -->
@@ -400,7 +429,7 @@
 				<button type="button" class="swiper-button-next"></button>
 			</div>
 		</div>
-	</section> -->
+	</section>
 	@@include('html/_action-block.htm',{})
 	<section class="contact" data-watch="navigator" data-watch-threshold="0.3">
 		<div class="contact__container">

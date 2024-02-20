@@ -1,0 +1,9 @@
+// politika-obrabotki
+.policy {
+	padding: 180px 0 110px;
+
+   @media (max-width:1500px) {
+      padding-top: calc(50px + 50*((100vw - 320px) / (1200 - 320)));
+      padding-bottom: calc(50px + 50*((100vw - 320px) / (1200 - 320)));
+   }
+}

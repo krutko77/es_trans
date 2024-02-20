@@ -6,6 +6,25 @@
       position: relative;
    }
 
+   &__list {
+      display: flex;
+      justify-content: space-around;
+		align-items:center;
+      flex-wrap: wrap;
+   }
+
+	.list__item {
+		padding: 0 15px;
+		margin-bottom: 20px;
+	}
+
+	.list__img {
+		width: auto;
+		@media (max-width: $pc) {
+			height: calc(40px + 20*((100vw - 320px) / (1260 - 320)));
+		}
+	}
+
    &__video-box {
       display: none;
       position: absolute;
