@@ -25,10 +25,9 @@
    font-size: 13px !important;
 }
 
-/* .b24-form .b24-window-scrollable {
-	padding-bottom: 5px !important;
+.b24-form-field-agreement .b24-form-control-required {
+   font-size: 16px !important;
 }
- */
 
 .b24-form-btn {
    background-color: $accentColor !important;
@@ -36,7 +35,7 @@
 }
 
 @media (any-hover: hover) {
-	.b24-form-btn:hover {
+   .b24-form-btn:hover {
       background-color: $accentDarkColor !important;
    }
 }
