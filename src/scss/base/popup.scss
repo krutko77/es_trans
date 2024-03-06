@@ -72,6 +72,11 @@ body::after {
    }
 }
 
+.popup__img-wrapper {
+	overflow: hidden;
+	aspect-ratio: 636/900;
+}
+
 .popup__img {
    width: 100%;
    height: auto;

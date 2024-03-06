@@ -2,17 +2,26 @@
 .services {
    background: url("../img/services/bg-services.jpg") center / cover no-repeat fixed;
 
+   &__img-box--1 {
+      aspect-ratio: 400/300;
+      overflow: hidden;
+   }
+
+   &__img-box--2 {
+      aspect-ratio: 400/273;
+      overflow: hidden;
+   }
+
    &__img {
       width: 100%;
       height: auto;
    }
 
-	&__list {
-		padding-left: 20px;
-	}
+   &__list {
+      padding-left: 20px;
+   }
 
    ul li {
-      list-style-type: square;		
+      list-style-type: square;
    }
 }
-

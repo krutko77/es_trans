@@ -77,6 +77,8 @@
 
    &__img-wrapper {
       margin-bottom: toEm(15, 20);
+		aspect-ratio: 67/65;
+		overflow: hidden;
    }
 
    &__icons {
