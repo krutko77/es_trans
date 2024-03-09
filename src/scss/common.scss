@@ -228,6 +228,7 @@ button:not(.swiper-button-prev, .swiper-button-next, .menu__icon),
 }
 
 @media (any-hover: hover) {
+
    .offer-button:hover,
    .action-button:hover,
    .back-button:hover {
@@ -286,7 +287,23 @@ button:not(.swiper-button-prev, .swiper-button-next, .menu__icon),
    display: flow-root;
 }
 
-.img-box {
+.img-box-300 {
+   width: 400px;
+
+   @media (max-width:$pc) {
+      width: 25%;
+   }
+
+   @media (max-width:$tablet) {
+      width: 30%;
+   }
+
+   @media (max-width:$mobileSmall) {
+      width: 100%;
+   }
+}
+
+.img-box-400 {
    width: 400px;
 
    @media (max-width:$pc) {

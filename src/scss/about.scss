@@ -6,8 +6,23 @@
       padding-top: calc(50px + 50*((100vw - 320px) / (1200 - 320)));      
    }
 
-	.about__story, .about__team, .about__garage {
+	.about__awards, .about__team, .about__garage {
 		min-height: 400px;
 		padding: 0;
 	}
+
+	&__img-box-300{
+      aspect-ratio: 300/400;
+      overflow: hidden;
+   }
+
+	&__img-box-400{
+      aspect-ratio: 400/300;
+      overflow: hidden;
+   }
+
+   &__img {
+      width: 100%;
+      height: auto;
+   }
 }

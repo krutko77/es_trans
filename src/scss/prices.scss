@@ -76,9 +76,10 @@
    }
 
    &__img-wrapper {
-      margin-bottom: toEm(15, 20);
+		width: fit-content;      
 		aspect-ratio: 67/65;
 		overflow: hidden;
+		margin-bottom: toEm(15, 20);
    }
 
    &__icons {

@@ -77,7 +77,7 @@
 	"FullPage": {
 		"scope": "html",
 		"prefix": "fullpage",
-		"body": "<div data-fp class=\"${1:ім'я-блоку}\">\n\t<div data-fp-section class=\"${1:ім'я-блоку}__section\"></div>\n</div>",
+		"body": "<div data-fp class=\"${1:ім'я-блоку}\">\n\t<div data-fp-article class=\"${1:ім'я-блоку}__article\"></div>\n</div>",
 		"description": "Додає структуру екранного прокручування сторінки"
 	},
 	"Add tooltip": {
