@@ -9,11 +9,7 @@
    &__img {
       width: 100%;
       height: auto;
-   }
-
-   ul li {
-      list-style-type: square;
-   }
+   }   
 
    &__garage {
       background-color: $footerBgColor;
@@ -29,6 +25,9 @@
 
    &__list-awars {
       padding-left: 20px;
+   }
+
+   .flight-list {
       display: flex;
       justify-content: space-around;
       flex-wrap: wrap;
@@ -53,25 +52,23 @@
          max-width: 100%;
       }
    }
+}
 
-
-
-   .img-width-370 {
-      aspect-ratio: 370/224;
-      overflow: hidden;
-   }
-
-   .img-width-584 {
-      aspect-ratio: 584/400;
-      overflow: hidden;
-   }
-
-
-
-
+ul li {
+	list-style-type: square;
 }
 
 .garage-list li,
-.awars-list li {
+.flight-list li {
    list-style-type: none;
+}
+
+.img-width-370 {
+	aspect-ratio: 370/224;
+	overflow: hidden;
+}
+
+.img-width-584 {
+	aspect-ratio: 584/400;
+	overflow: hidden;
 }
