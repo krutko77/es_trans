@@ -1,28 +1,45 @@
 // about
 .about {
-	padding: 110px 0 0;
+   padding: 110px 0 0;
 
    @media (max-width:1500px) {
-      padding-top: calc(50px + 50*((100vw - 320px) / (1200 - 320)));      
-   }
-
-	.about__awards, .about__team, .about__garage {
-		min-height: 400px;
-		padding: 0;
-	}
-
-	&__img-box-300{
-      aspect-ratio: 300/400;
-      overflow: hidden;
-   }
-
-	&__img-box-400{
-      aspect-ratio: 400/300;
-      overflow: hidden;
+      padding-top: calc(50px + 50*((100vw - 320px) / (1200 - 320)));
    }
 
    &__img {
       width: 100%;
       height: auto;
+   }
+
+   &__garage {
+      background-color: $footerBgColor;
+      padding-top: 50px;
+      padding-bottom: 120px;
+
+      @media (max-width: 1500px) {
+         padding-top: calc(30px + 20*((100vw - 320px) / (1500 - 320)));
+         padding-bottom: calc(50px + 50*((100vw - 320px) / (1500 - 320)));
+      }
+   }
+
+   .list-about {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 30px;
+
+      @media (max-width:$mobileSmall) {
+         gap: 20px;
+      }
+
+      &__item {
+         max-width: 100%;
+      }
+   }
+
+   .img-width-584 {
+      aspect-ratio: 584/400;
+      overflow: hidden;
    }
 }

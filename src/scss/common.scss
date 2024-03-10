@@ -288,7 +288,7 @@ button:not(.swiper-button-prev, .swiper-button-next, .menu__icon),
 }
 
 .img-box-300 {
-   width: 400px;
+   width: 300px;
 
    @media (max-width:$pc) {
       width: 25%;
@@ -317,6 +317,16 @@ button:not(.swiper-button-prev, .swiper-button-next, .menu__icon),
    @media (max-width:$mobileSmall) {
       width: 100%;
    }
+}
+
+.img-width-300 {
+   aspect-ratio: 300/400;
+   overflow: hidden;
+}
+
+.img-width-400 {
+   aspect-ratio: 400/300;
+   overflow: hidden;
 }
 
 .icons-check {
