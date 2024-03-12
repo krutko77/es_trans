@@ -3,8 +3,8 @@ section {
    padding: 110px 0 110px;
 
    @media (max-width:1500px) {
-      padding-top: calc(50px + 50*((100vw - 320px) / (1200 - 320)));
-      padding-bottom: calc(50px + 50*((100vw - 320px) / (1200 - 320)));
+      padding-top: calc(50px + 60*((100vw - 320px) / (1500 - 320)));
+      padding-bottom: calc(50px + 60*((100vw - 320px) / (1500 - 320)));
    }
 }
 
@@ -12,8 +12,8 @@ section.action-block {
    padding: 90px 0 90px;
 
    @media (max-width:1500px) {
-      padding-top: calc(50px + 20*((100vw - 320px) / (1200 - 320)));
-      padding-bottom: calc(50px + 20*((100vw - 320px) / (1200 - 320)));
+      padding-top: calc(50px + 20*((100vw - 320px) / (1500 - 320)));
+      padding-bottom: calc(50px + 20*((100vw - 320px) / (1500 - 320)));
    }
 }
 
@@ -43,7 +43,7 @@ a {
    line-height: math.div(30, 24);
 
    @media (max-width: 1500px) {
-      font-size: calc(22px + 2*((100vw - 320px) / (1260 - 320)));
+      font-size: calc(22px + 2*((100vw - 320px) / (1500 - 320)));
    }
 }
 
@@ -55,7 +55,7 @@ h2 {
    margin-bottom: toEm(50, 50);
 
    @media (max-width:1500px) {
-      font-size: calc(toRem(27) + 18*((100vw - 320px) / (1200 - 320)));
+      font-size: calc(toRem(27) + 18*((100vw - 320px) / (1500 - 320)));
    }
 }
 
@@ -68,7 +68,20 @@ h3 {
 
 
    @media (max-width:1500px) {
-      font-size: calc(toRem(20) + 6*((100vw - 320px) / (1200 - 320)));
+      font-size: calc(toRem(20) + 6*((100vw - 320px) / (1500 - 320)));
+   }
+}
+
+h4 {
+   font-size: toRem(24);
+   font-weight: 900;
+   line-height: math.div(30, 24);
+   text-align: left;
+   margin-bottom: toEm(10, 24);
+
+
+   @media (max-width:1500px) {
+      font-size: calc(toRem(18) + 6*((100vw - 320px) / (1500 - 320)));
    }
 }
 
@@ -80,8 +93,12 @@ h3 {
    line-height: 1.5;
 
    @media (max-width:1500px) {
-      font-size: calc(toRem(16) + 2*((100vw - 320px) / (1200 - 320)));
+      font-size: calc(toRem(16) + 2*((100vw - 320px) / (1500 - 320)));
    }
+}
+
+.text-right {
+	text-align: right;
 }
 
 // Ссылки тексте
@@ -113,7 +130,7 @@ h3 {
    margin-bottom: 10px;
 
    @media (max-width: 1500px) {
-      margin-bottom: calc(7px + 3*((100vw - 320px) / (1260 - 320)));
+      margin-bottom: calc(7px + 3*((100vw - 320px) / (1500 - 320)));
    }
 }
 
@@ -121,7 +138,7 @@ h3 {
    margin-bottom: 20px;
 
    @media (max-width: 1500px) {
-      margin-bottom: calc(15px + 5*((100vw - 320px) / (1260 - 320)));
+      margin-bottom: calc(15px + 5*((100vw - 320px) / (1500 - 320)));
    }
 }
 
@@ -129,7 +146,7 @@ h3 {
    margin-bottom: 30px;
 
    @media (max-width: 1500px) {
-      margin-bottom: calc(20px + 10*((100vw - 320px) / (1260 - 320)));
+      margin-bottom: calc(20px + 10*((100vw - 320px) / (1500 - 320)));
    }
 }
 
@@ -137,7 +154,7 @@ h3 {
    margin-bottom: 40px;
 
    @media (max-width: 1500px) {
-      margin-bottom: calc(25px + 10*((100vw - 320px) / (1260 - 320)));
+      margin-bottom: calc(25px + 10*((100vw - 320px) / (1500 - 320)));
    }
 }
 
@@ -145,7 +162,7 @@ h3 {
    margin-bottom: 50px;
 
    @media (max-width: 1500px) {
-      margin-bottom: calc(30px + 10*((100vw - 320px) / (1260 - 320)));
+      margin-bottom: calc(30px + 10*((100vw - 320px) / (1500 - 320)));
    }
 }
 
@@ -153,7 +170,7 @@ h3 {
    margin-bottom: 60px;
 
    @media (max-width: 1500px) {
-      margin-bottom: calc(35px + 15*((100vw - 320px) / (1260 - 320)));
+      margin-bottom: calc(35px + 15*((100vw - 320px) / (1500 - 320)));
    }
 }
 
@@ -161,7 +178,15 @@ h3 {
    margin-bottom: 80px;
 
    @media (max-width: 1500px) {
-      margin-bottom: calc(45px + 20*((100vw - 320px) / (1260 - 320)));
+      margin-bottom: calc(45px + 20*((100vw - 320px) / (1500 - 320)));
+   }
+}
+
+.margin-bottom-100 {
+   margin-bottom: 100px;
+
+   @media (max-width: 1500px) {
+      margin-bottom: calc(60px + 40*((100vw - 320px) / (1500 - 320)));
    }
 }
 
@@ -169,7 +194,7 @@ h3 {
    margin-bottom: 120px;
 
    @media (max-width: 1500px) {
-      margin-bottom: calc(50px + 50*((100vw - 320px) / (1260 - 320)));
+      margin-bottom: calc(70px + 50*((100vw - 320px) / (1500 - 320)));
    }
 }
 
