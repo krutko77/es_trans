@@ -4,7 +4,7 @@
    background-color: $mainBgColor;
    width: 100%;
    z-index: 10;
-	border-bottom: solid 1px $linkOtherColor;
+   border-bottom: solid 1px $linkOtherColor;
 
    &__container-header {
       display: flex;
@@ -66,7 +66,7 @@
             transition: left 0.3s ease;
          }
 
-			.menu-open & {
+         .menu-open & {
             left: 0;
             transition: left 0.3s linear;
          }
@@ -94,12 +94,14 @@
          }
       }
 
-      &__item {
+      &__item,
+      &-item {
          display: inline-block;
          position: relative;
       }
 
-      &__item:not(:last-child) {
+      &__item:not(:last-child),
+      &-item:not(:last-child) {
          margin-right: 15px;
 
          @media (max-width: $pc) {
@@ -153,7 +155,7 @@
          }
       }
 
-		&__link._navigator-active::before,
+      &__link._navigator-active::before,
       &__link._navigator-active::after {
          width: calc(50% - toEm(3.5, 14));
       }
@@ -161,33 +163,34 @@
 }
 
 .social {
-	display: flex;
-	align-items: center;
+   display: flex;
+   align-items: center;
 
-	&__item {
-		margin-right: 20px;
-	}
+   &__item {
+      margin-right: 20px;
+   }
 
-	&__item:last-child {
-		margin-right: 0;
+   &__item:last-child {
+      margin-right: 0;
 
-		@media (max-width: $tablet) {
-			margin-right: 20px;
-		}
-	}
+      @media (max-width: $tablet) {
+         margin-right: 20px;
+      }
+   }
 
-	&__icon {
-		height: 40px;
-		width: 40px;
-		opacity: 0.7;
-		transition: opacity 0.3s ease;
-	}
+   &__icon {
+      height: 40px;
+      width: 40px;
+      opacity: 0.7;
+      vertical-align: middle;
+      transition: opacity 0.3s ease;
+   }
 
-	@media (any-hover: hover) {
-		.social__icon:hover {
-			opacity: 1;
-		}
-	}
+   @media (any-hover: hover) {
+      .social__icon:hover {
+         opacity: 1;
+      }
+   }
 }
 
 .opening-hours-telephone {
@@ -214,7 +217,7 @@
 }
 
 ._header-show {
-	border-bottom: none;
+   border-bottom: none;
    transition: top 0.7s 0s;
    top: 0;
    box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);

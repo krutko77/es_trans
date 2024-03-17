@@ -15,7 +15,7 @@
    align-items: flex-end;
 
    @media (max-width:$mobileSmall) {
-      padding: 100px 0 70px;
+      padding: 50px 0 70px;
       background-image: url('./../img/bg-home-480-50.jpg');
    }
 
@@ -36,7 +36,7 @@
       text-shadow: 0 0 5px $mainColor;
 
       @media (max-width:1500px) {
-         font-size: calc(toRem(50) + 10*((100vw - 320px) / (1200 - 320)));
+         font-size: calc(toRem(45) + 25*((100vw - 320px) / (1500 - 320)));
       }
    }
 
@@ -56,7 +56,7 @@
       text-shadow: 0 0 5px $mainColor;
 
       @media (max-width:1500px) {
-         font-size: calc(toRem(25) + 10*((100vw - 320px) / (1200 - 320)));
+         font-size: calc(toRem(20) + 10*((100vw - 320px) / (1500 - 320)));
       }
 
       @media (max-width:$tablet) {
@@ -114,6 +114,10 @@
 		&__item {
 			display: flex;
 			margin-bottom: toEm(35, 25);
+
+			@media (max-width: $mobile) {
+				margin-bottom: 20px;
+			}
 	
 			p {
 				text-transform: uppercase;
@@ -123,8 +127,9 @@
 				text-shadow: 0 0 15px $mainColor;
 	
 				@media (max-width:1500px) {
-					font-size: calc(toRem(18) + 2*((100vw - 320px) / (1200 - 320)));
+					font-size: calc(toRem(17) + 2*((100vw - 320px) / (1500 - 320)));
 				}
+				
 			}
 		}
 	}
